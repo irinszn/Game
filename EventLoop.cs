@@ -1,3 +1,5 @@
+namespace Loop;
+
 using System;
 
 public class EventLoop
