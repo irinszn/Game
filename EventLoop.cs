@@ -17,8 +17,6 @@ public class EventLoop
         while (true)
         {
             var key = Console.ReadKey(true);
-            int column = Console.CursorLeft;
-            int row = Console.CursorTop;
             switch (key.Key)
             {
                 case ConsoleKey.LeftArrow:
