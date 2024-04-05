@@ -16,11 +16,11 @@ public class Game
         => player.MoveLeft();
 
     public void GoingRight(object sender, EventArgs args)
-    => player.MoveRight();
+        => player.MoveRight();
 
     public void GoingDown(object sender, EventArgs args)
-    => player.MoveDown();
+        => player.MoveDown();
 
     public void GoingUp(object sender, EventArgs args)
-    => player.MoveUp();
+        => player.MoveUp();
 }
