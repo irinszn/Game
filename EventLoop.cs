@@ -22,31 +22,18 @@ public class EventLoop
             switch (key.Key)
             {
                 case ConsoleKey.LeftArrow:
-                    LeftHandler(this, new CursorPositionEventArgs(column, row));
+                    LeftHandler(this, EventArgs.Empty);
                     break;
                 case ConsoleKey.RightArrow:
-                    RightHandler(this, new CursorPositionEventArgs(column, row));
+                    RightHandler(this, EventArgs.Empty);
                     break;
                 case ConsoleKey.UpArrow:
-                    UpHandler(this, new CursorPositionEventArgs(column, row));
+                    UpHandler(this, EventArgs.Empty);
                     break;
                 case ConsoleKey.DownArrow:
-                    DownHandler(this, new CursorPositionEventArgs(column, row));
+                    DownHandler(this, EventArgs.Empty);
                     break;
             }
         }
-    }
-
-    private class CursorPositionEventArgs : EventArgs
-    {
-        public CursorPositionEventArgs(int columnPosition, int rowPosition)
-        {
-            this.ColumnPosition = columnPosition;
-            this.RowPosition = rowPosition;
-        }
-
-        public int ColumnPosition { get; }
-
-        public int RowPosition{ get; }
     }
 }
